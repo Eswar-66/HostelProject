@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+        integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.css" />
+
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" />
+
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.0.0/fonts/remixicon.css" rel="stylesheet" />
+
+    <!-- poppins -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+
+    <!-- font-awesome links -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+
+    <!-- font awesome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="booking.css">
+</head>
+
+<body>
+
+    <header class="header">
+        <nav>
+            <div class="nav__bar">
+                <div class="logo">
+                    <a href="#" class="logo"><span> Stay INN Hostels</span></a>
+                </div>
+                <div class="nav__menu__btn" id="menu-btn">
+                    <i class="ri-menu-line"></i>
+                </div>
+            </div>
+            <ul class="nav__links" id="nav-links">
+                <li><a href="update.html">Home</a></li>
+                <li><a href="update.html">About</a></li>
+                <li><a href="update.html">Services</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="#Booking">Booking</a></li>
+            </ul>
+            <button class="btn nav__btn">Book Now</button>
+        </nav>
+        <div class="section__container header__container" id="home">
+            <p>Simple - Unique - Friendly</p>
+            <h1>"You can check everywhere;<br /> we are <span>the best.</span>"</h1>
+        </div>
+    </header>
+
+    <!-- checkin- check out -->
+
+    <section class="section__container booking__container">
+        <form action="/" class="booking__form">
+            <div class="input__group">
+                <!-- <span><i class="ri-calendar-2-fill"></i></span> -->
+                <span><i class="ri-parent-fill"></i></span>
+                <div>
+                    <label for="check-in">NO-OF GUEST</label><br>
+                    <select name="" id="selection">
+                        <option value="">Guest</option>
+                        <option value="">1 Guest</option>
+                        <option value="">2 Guest</option>
+                        <option value="">3 Guest</option>
+                        <option value="">4 Guest</option>
+                    </select>
+
+                    <!-- <input type="date" placeholder="Check In" /> -->
+                </div>
+            </div>
+            <div class="input__group">
+                <!-- <span><i class="ri-calendar-2-fill"></i></span> -->
+                <span><i class="ri-parent-fill"></i></span>
+                <div>
+                    <!-- <label for="check-out">CHECK-OUT</label> -->
+                    <label for="check-out">NO-OF SHARING</label><br>
+                    <select name="" id="selection">
+                        <option value="">sharing</option>
+                        <option value="">2 sharing</option>
+                        <option value="">3 sharing</option>
+                        <option value="">4 sharing</option>
+                        <option value="">6 sharing</option>
+                    </select>
+                    <!-- <input type="date" placeholder="Check Out" /> -->
+                </div>
+            </div>
+            <div class="input__group" id="move">
+                <!-- <span><i class="ri-user-fill"></i></span> -->
+                <span><i class="ri-hotel-bed-line"></i></span>
+                <div>
+                    <!-- <label for="guest">SHARING</label> -->
+                    <label for="guest">BED TYPE</label><br>
+                    <select name="" id="selection">
+                        <option value="">Bed/cart</option>
+                        <option value="">Upper Bed</option>
+                        <option value="">Middle Bed</option>
+                        <option value="">Lower Bed</option>
+                    </select>
+                    <!-- <input type="number" placeholder="No.of Sharing" /> -->
+                </div>
+            </div>
+            <div class="input__group input__btn" id="moved">
+                <button class="btn"><a href="#services">CHECH AVAILABILITY</a></button>
+            </div>
+        </form>
+    </section>
+
+    <!-- Room bookings -->
+
+    <section class="offer mtop" id="services">
+        <div class="container">
+            <div class="heading">
+                <h5>EXCLUSIVE OFFERS </h5>
+                <h3>Hostel Stay-INN J-Block </h3>
+            </div>
+
+            <div class="content grid2 mtop">
+                <div class="box flex">
+                    <div class="left">
+                        <img src="images/jblock-1.jpg" alt="">
+                    </div>
+                    <div class="right">
+                        <h4>2 Sharing- Deluxe Room</h4>
+                        <div class="rate flex">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <p>Upper bed - 10000 (With Food)</p>
+                        <p>Lower bed - 11000 (With Food)</p>
+                        <p>Single bed - 12000 (With Food)</p>
+                        <br>
+                        <button class="flex1" onclick="submit()">
+                            <span> <a href="">BOOK NOW</a></span>
+                            <i class="fas fa-arrow-circle-right"></i>
+                        </button>
+                    </div>
+                </div>
+                <div class="box flex">
+                    <div class="left">
+                        <img src="images/jblock-2.jpg" alt="">
+                    </div>
+                    <div class="right">
+                        <h4>3 Sharing- Deluxe Room</h4>
+                        <div class="rate flex">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <p>Upper bed - 8000 (With Food)</p>
+                        <p>Lower bed - 8500 (With Food)</p>
+                        <p>Single bed - 9000 (With Food)</p>
+                        <br>
+                        <button class="flex1" onclick="submit()">
+                            <span> <a href="">BOOK NOW</a></span>
+                            <i class="fas fa-arrow-circle-right"></i>
+                        </button>
+                    </div>
+                </div>
+                <div class="box flex">
+                    <div class="left">
+                        <img src="images/jblock-3.jpg" alt="">
+                    </div>
+                    <div class="right">
+                        <h4>4 sharing- Deluxe Room</h4>
+                        <div class="rate flex">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                        </div>
+                        <p>Upper bed - 8000 (With Food)</p>
+                        <p>Lower bed - 8500 (With Food)</p>
+                        <p>Single bed - 9000 (With Food)</p>
+                        <br>
+                        <button class="flex1" onclick="submit()">
+                            <span> <a href="">BOOK NOW</a></span>
+                            <i class="fas fa-arrow-circle-right"></i>
+                        </button>
+                    </div>
+                </div>
+                <div class="box flex">
+                    <div class="left">
+                        <img src="images/jblock-4.jpg" alt="">
+                    </div>
+                    <div class="right">
+                        <h4>6 sharing- Deluxe Room</h4>
+                        <div class="rate flex">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                        </div>
+                        <p>Upper bed - 7000 (With Food)</p>
+                        <p>Lower bed - 7500 (With Food)</p>
+                        <p>Single bed - 8000 (With Food)</p>
+                        <br>
+                        <button class="flex1" onclick="submit()">
+                            <span> <a href="">BOOK NOW</a></span>
+                            <i class="fas fa-arrow-circle-right"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Mullai nagar hostel -->
+    <section class="offer mtop" id="services">
+        <div class="container">
+            <div class="heading">
+                <h5>EXCLUSIVE OFFERS </h5>
+                <h3>Hostel Stay-INN Mullai nagar </h3>
+            </div>
+
+            <div class="content grid2 mtop">
+                <div class="box flex">
+                    <div class="left">
+                        <img src="images/mullai1.png" alt="">
+                    </div>
+                    <div class="right">
+                        <h4>2 Sharing- Deluxe Room</h4>
+                        <div class="rate flex">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <p>Upper bed - 10000 (With Food)</p>
+                        <p>Lower bed - 11000 (With Food)</p>
+                        <p>Single bed - 12000 (With Food)</p>
+                        <br>
+                        <button class="flex1" onclick="submit()">
+                            <span> <a href="">BOOK NOW</a></span>
+                            <i class="fas fa-arrow-circle-right"></i>
+                        </button>
+                    </div>
+                </div>
+                <div class="box flex">
+                    <div class="left">
+                        <img src="images/mullai8.png" alt="">
+                    </div>
+                    <div class="right">
+                        <h4>3 Sharing- Deluxe Room</h4>
+                        <div class="rate flex">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <p>Upper bed - 8000 (With Food)</p>
+                        <p>Lower bed - 8500 (With Food)</p>
+                        <p>Single bed - 9000 (With Food)</p>
+                        <br>
+                        <button class="flex1" onclick="submit()">
+                            <span> <a href="">BOOK NOW</a></span>
+                            <i class="fas fa-arrow-circle-right"></i>
+                        </button>
+                    </div>
+                </div>
+                <div class="box flex">
+                    <div class="left">
+                        <img src="images/mullai12.png" alt="">
+                    </div>
+                    <div class="right">
+                        <h4>4 sharing- Deluxe Room</h4>
+                        <div class="rate flex">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                        </div>
+                        <p>Upper bed - 8000 (With Food)</p>
+                        <p>Lower bed - 8500 (With Food)</p>
+                        <p>Single bed - 9000 (With Food)</p>
+                        <br>
+                        <button class="flex1" onclick="submit()">
+                            <span> <a href="">BOOK NOW</a></span>
+                            <i class="fas fa-arrow-circle-right"></i>
+                        </button>
+                    </div>
+                </div>
+                <div class="box flex">
+                    <div class="left">
+                        <img src="images/mullai4.png" alt="">
+                    </div>
+                    <div class="right">
+                        <h4>6 sharing- Deluxe Room</h4>
+                        <div class="rate flex">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                        </div>
+                        <p>Upper bed - 7000 (With Food)</p>
+                        <p>Lower bed - 7500 (With Food)</p>
+                        <p>Single bed - 8000 (With Food)</p>
+                        <br>
+                        <button class="flex1" onclick="submit()">
+                            <span> <a href="">BOOK NOW</a></span>
+                            <i class="fas fa-arrow-circle-right"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script>
+
+        function submit() {
+            alert('Booking confirmed')
+        }
+    </script>
+</body>
+
+</html>

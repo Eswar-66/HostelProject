@@ -1,0 +1,484 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.0.0/fonts/remixicon.css" rel="stylesheet" />
+
+    <!-- poppins -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+
+    <!-- font-awesome links -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+
+    <!-- font awesome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="update.css">
+
+    <title>Stay INN Hostels</title>
+</head>
+
+<body>
+
+    <!-- navbar & head -->
+
+    <header class="header">
+        <marquee style="background-color: yellow; z-index:111" loop="-1"  >Disclaimer: Our new branch coming soon @pioneer colony, Anna nagar </marquee>
+        <nav>
+            <div class="nav__bar">
+                <div class="logo">
+                    <a href="#" class="logo"><span> Stay INN Hostels</span></a>
+                </div>
+                <div class="nav__menu__btn" id="menu-btn">
+                    <i class="ri-menu-line"></i>
+                </div>
+            </div>
+            <ul class="nav__links" id="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#service">Services</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="booking.html">Booking</a></li>
+            </ul>
+            <button class="btn nav__btn">Book Now</button>
+        </nav>
+        
+        <div class="section__container header__container" id="home">
+            <p>Simple - Unique - Friendly</p>
+            <h1>"You can check everywhere;<br /> we are <span >THE BEST.</span>"</h1>
+        </div>
+    </header>
+
+    <!-- checkin- check out -->
+
+    <section class="section__container booking__container">
+        <form action="/" class="booking__form">
+            <div class="input__group">
+                <span><i class="ri-calendar-2-fill"></i></span>
+                <div>
+                    <label for="check-in">CHECK-IN</label>
+                    <input type="date" placeholder="Check In" />
+                </div>
+            </div>
+            <div class="input__group">
+                <span><i class="ri-calendar-2-fill"></i></span>
+                <div>
+                    <label for="check-out">CHECK-OUT</label>
+                    <input type="date" placeholder="Check Out" />
+                </div>
+            </div>
+            <div class="input__group" id="move">
+                <span><i class="ri-user-fill"></i></span>
+                <div>
+                    <label for="guest">SHARING</label>
+                    <input type="number" placeholder="No.of Sharing" />
+                </div>
+            </div>
+            <div class="input__group input__btn" id="moved">
+                <button class="btn"><a href="booking.html">CHECH AVAILABILITY</a></button>
+            </div>
+        </form>
+    </section>
+
+    <!-- Welcome to our commuinity / about us-->
+
+    <section class="section__container about__container" id="about">
+        <div class="about__image">
+            <img src="images/bg-front.jpg" alt="about" />
+        </div>
+        <div class="about__content">
+            <p class="section__subheader">ABOUT US</p>
+            <h2 class="section__header">The Best accomndation Start Here!</h2>
+            <p class="section__description">
+                Experience the perfect blend of comfort, adventure, and community in
+                our hostels. Whether you're a solo backpacker, digital nomad, or group
+                traveler, we've created spaces where memories are made and friendships
+                are forged.
+            </p>
+
+            <div class="about-features">
+                <div class="feature">
+                    <i class="fas fa-users"></i>
+                    <div class="feature-text">
+                        <h3>10,000+</h3>
+                        <p>Happy customers</p>
+                    </div>
+                </div>
+                <div class="feature">
+                    <i class="fas fa-map-marked-alt"></i>
+                    <div class="feature-text">
+                        <h3>1 City</h3>
+                        <p>Prime Locations</p>
+                    </div>
+                </div>
+                <div class="feature">
+                    <i class="fas fa-calendar-check"></i>
+                    <div class="feature-text">
+                        <h3>1+ Years</h3>
+                        <p>Of Experience</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="about__btn">
+                <button class="btn">Read More</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- amenties -->
+
+    <section class="section__container room__container">
+        <div class="about__content">
+            <p class="section__subheader">OUR HOSTEL FACILITIES</p>
+            <h2 class="section__header">Giving entirely awesome.</h2>
+            <section class="amenities">
+                <div class="container">
+                    <h2>Our Amenities</h2>
+                    <p>At STAY INN, we offer a wide range of amenities to make your stay comfortable and enjoyable.</p>
+                    <div class="amenities-list">
+                        <div class="amenity-item">
+                            <i class="fas fa-couch"></i>
+                            <h3>Common Lounge</h3>
+                            <p>Relax and socialize in our comfortable common lounge area.</p>
+                        </div>
+                        <div class="amenity-item">
+                            <i class="fas fa-wifi"></i>
+                            <h3>Free Wifi</h3>
+                            <p>Stay connected with our high-speed internet access available throughout the property.</p>
+                        </div>
+                        <div class="amenity-item">
+                            <i class="fas fa-lock"></i>
+                            <h3>Security Locker</h3>
+                            <p>Keep your belongings safe with our secure lockers.</p>
+                        </div>
+                        <div class="amenity-item">
+                            <i class="fas fa-video"></i>
+                            <h3>CCTV</h3>
+                            <p>24/7 surveillance to ensure your safety and security.</p>
+                        </div>
+                        <div class="amenity-item">
+                            <i class="fas fa-parking"></i>
+                            <h3>Parking Facility</h3>
+                            <p>Take advantage of our complimentary parking facilities available for all sharing persons.
+                            </p>
+                        </div>
+                        <div class="amenity-item">
+                            <i class="fas fa-utensils"></i>
+                            <h3>Home Made Foods</h3>
+                            <p>Enjoy delicious home-cooked meals during your stay.</p>
+                        </div>
+                        <div class="amenity-item">
+                            <i class="fas fa-tshirt"></i>
+                            <h3>Washing Machine</h3>
+                            <p>Access to washing machines for your laundry needs.</p>
+                        </div>
+                        <div class="amenity-item">
+                            <i class="fas fa-broom"></i>
+                            <h3>Daily Room Cleaning</h3>
+                            <p>Our staff ensures your room is cleaned daily for your comfort.</p>
+                        </div>
+                        <div class="amenity-item">
+                            <i class="fas fa-tint"></i>
+                            <h3>24/7 Water Supply</h3>
+                            <p>Enjoy uninterrupted water supply throughout your stay.</p>
+                        </div>
+                        <div class="amenity-item">
+                            <i class="fas fa-water"></i>
+                            <h3>RO Water</h3>
+                            <p>Access to clean and safe drinking water with our RO water facility.</p>
+                        </div>
+                        <div class="amenity-item">
+                            <i class="fas fa-bed"></i>
+                            <h3>Bed With Mattress & Pillow</h3>
+                            <p>Comfortable beds with mattresses and pillows provided.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </section>
+
+    <!-- services section-->
+
+    <section class="service" id="service">
+        <div class="section__container service__container">
+            <div class="service__content">
+                <p class="section__subheader">Policies/Rules</p>
+                <h2 class="section__header">Mandatory hostel rules to be followed.</h2>
+                <ul class="service__list">
+                    <li>
+                        <span><i class="ri-24-hours-line"></i></span>
+                        24 Hours Room Service
+                    </li>
+                    <li>
+                        <span><i class="ri-shield-star-line"></i></span>
+                        Full time Warden
+                    </li>
+                    <li>
+                        <span><i class="fa-solid fa-smoking"></i></span>
+                        Smoking and Alcohol Restricted
+                    </li>
+                    <li>
+                        <span> <i class="ri-team-fill"></i></span>
+                        Visitors Allowed
+                    </li>
+                    <li>
+                        <span><i class="ri-clipboard-line"></i></i></span>
+                        Notice period 15 days
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+    <div style="height: 20px; width: 100%;">
+
+    </div>
+
+    <!-- review section -->
+
+    <section class="customer-feedback" id="service">
+        <div class="feedback__container cus-feedback__container">
+            <div class="feedback__content">
+                <p class="feedback__subheader">Customer Feedback</p>
+                <h2 class="feedback__header">What your  customer say about us.</h2>
+                <div class="comment-slider" style="
+                 --width:400px;
+                 --height:340px;
+                 --quantity:4;
+                 " >
+                  <div class="sec3-comment-container">
+          
+                    <!-- comment box 1 -->
+                      <div class="comment-box comment-ani1"
+                      style="--position: 1">
+                        <!-- top part -->
+                         <div class="comment-profile ">
+                            <div class="prof-img">
+                              <img src="./images/muthu.png"/>
+                            </div>
+                            <div class="name-user">
+                              <strong>Muthu Kumar</strong>
+                              <span>Local Guide &#x2022; 184 reviews &#x2022; 792 photos</span>
+                            </div>
+                         </div>
+          
+                         <div class="comment-rating">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                         </div>
+          
+                         <div class="customer-comment">
+                          <p>One of the Best men's Hostel in anna Nagar West...
+                            Best Price.... Perfect Food....Great accomodation.... Affordable Price Mens Hostel near Anna Nagar & Villivakkam</p>
+                        </div>
+          
+                      </div> 
+          
+                      <div class="comment-box comment-ani2"
+                      style="--position: 2" >
+                        <!-- top part -->
+                         <div class="comment-profile">
+                            <div class="prof-img">
+                              <img src="./images/Naveen.png">
+                            </div>
+                            <div class="name-user">
+                              <strong>Naveen</strong>
+                              <span>3 reviews &#x2022; 3 photos</span>
+                            </div>
+                         </div>
+          
+                         <div class="comment-rating">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                         </div>
+          
+                         <div class="customer-comment">
+                          <p>I recommend the best affordable PG in Anna Nagar for students and working professionals. The food is clean and highly recommended.</p>
+                        </div>
+          
+                      </div> 
+          
+                      <div class="comment-box comment-ani3"
+                      style="--position: 3" >
+                        <!-- top part -->
+                         <div class="comment-profile">
+                            <div class="prof-img">
+                              <img src="./images/Ramesh.png"/>
+                            </div>
+                            <div class="name-user">
+                              <strong>Ramesh</strong>
+                              <span>1 review</span>
+                            </div>
+                         </div>
+          
+                         <div class="comment-rating">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                         </div>
+          
+                         <div class="customer-comment">
+                          <p>"Stay Inn Hostel is a good place to stay. The food is really nice, and the rooms are simple but comfortable. The price is quite affordable for the location, and the staff is courteous. Overall, a great budget option in Anna Nagar West."</p>
+                        </div>
+          
+                      </div> 
+          
+                      <div class="comment-box comment-ani4" style="--position: 4">
+                        <!-- top part -->
+                         <div class="comment-profile">
+                            <div class="prof-img">
+                              <img src="./images/Vigneshwar.png">
+                            </div>
+                            <div class="name-user">
+                              <strong>VIGNESHWAR SAH SCR</strong>
+                              <span>3 reviews</span>
+                            </div>
+                         </div>
+          
+                         <div class="comment-rating">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                         </div>
+          
+                         <div class="customer-comment">
+                          <p>Stay Inn Hostel is a fantastic place to stay. The food is delicious and homely, and the
+                            rooms are clean and comfortable. The price is very reasonable, and the location is
+                            ideal. The staff is friendly, and overall it’s been a great experience.</p>
+                        </div>
+          
+                      </div> 
+          
+                  </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- details footer -->
+    <div class="about__content">
+        <p class="section__subheader">Get In Touch</p>
+        <h2 class="section__header">For more queries</h2>
+    </div>
+
+    <!-- <marquee style="background-color: aqua;" loop="-1" >Disclaimer: Our new branch coming soon @pioneer colony, Anna nagar </marquee> -->
+    <hr>
+
+    <footer class="footer" id="contact">
+
+        <div class="section__container footer__container">
+            <div class="footer__col">
+                <!-- <h4>MULLAI NAGAR NAVIGATION</h4> -->
+                 <h4>Get In Touch</h4>
+                <div>
+                    <!-- <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d726.8320882797149!2d80.20113807915045!3d13.097267838917002!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a5265007df60711%3A0x21b3e07cbc8d1d8c!2sStay%20Inn%20Men&#39;s%20Hostel(PG)!5e0!3m2!1sen!2sin!4v1738477367693!5m2!1sen!2sin"
+                        width="280" height="200" style="border:0;" allowfullscreen="" loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade"></iframe> -->
+
+                    <p class="section__description">
+                        One Roof, Many Journeys. Sleep Tight, Pay LightPocket-Friendly Paradise.
+                        <!-- Discover a world of comfort, luxury, and adventure as you explore
+                        our curated selection of hotels, making every moment of your getaway
+                        truly extraordinary. -->
+                    </p>
+                    <button class="btn">Book Now</button>
+                </div>
+            </div>
+            <div class="footer__col">
+                <h4>QUICK LINKS</h4>
+                <ul class="footer__links">
+                    <li><i class="fa-regular fa-address-card"></i> <a href="#about"> About us</a></li>
+                    <li><i class="fa-solid fa-percent"></i><a href="#"> Special Offers & Packages</a></li>
+                    <li><i class="fa-solid fa-bed"></i><a href="#"> Room Types & Amenities</a></li>
+                    <li><i class="fa-regular fa-comment-dots"></i><a href="#"> Customer Reviews & Ratings</a></li>
+                    <!-- <li> <i class="fa-solid fa-circle-question"></i><a href="#"> FAQs</a></li> -->
+                    <!-- <i class="fa-regular fa-star"></i> -->
+                </ul>
+            </div>
+            <div class="footer__col">
+                <h4>OUR SERVICES</h4>
+                <ul class="footer__links">
+                    <li> <i class="fas fa-phone"></i> <a href="#"> +91 9445487884</a></li>
+                    <li> <i class="fas fa-envelope"></i> <a href="#"> info@hostels.com</a></li>
+                    <li> <i class="fas fa-map-marker-alt"></i> <a href="#"> Mullai Nagar Anna Nagar West</a></li>
+                    <li> <i class="fas fa-map-marker-alt"></i> <a href="#"> J Block Anna Nagar West</a></li>
+                </ul>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="https://www.instagram.com/stay_inn_hostel?igsh=YWJidXZmeG5jYjlk"><i
+                            class="fab fa-instagram"></i></a>
+                    <!-- <a href="#"><i class="fab fa-twitter"></i></a> -->
+                    <a href="#"><i class="fab fa-youtube"></i></a>
+                    <a href="https://wa.me/919445487884"><i class="fab fa-whatsapp"></i></a>
+                </div>
+            </div>
+            <div class="footer__col">
+                <h4>MULLAI NAGAR NAVIGATION</h4>
+                <div>
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d726.8320882797149!2d80.20113807915045!3d13.097267838917002!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a5265007df60711%3A0x21b3e07cbc8d1d8c!2sStay%20Inn%20Men&#39;s%20Hostel(PG)!5e0!3m2!1sen!2sin!4v1738477367693!5m2!1sen!2sin"
+                        width="280" height="200" style="border:0;" allowfullscreen="" loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    <!-- <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d1958.5460216319111!2d80.19896901251342!3d13.089820686124051!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMTPCsDA1JzIzLjUiTiA4MMKwMTEnNTguOCJF!5e0!3m2!1sen!2sin!4v1738479432718!5m2!1sen!2sin"
+                        width="250" height="200" style="border:0;" allowfullscreen="" loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade"></iframe> -->
+                </div>
+            </div>
+        </div>
+        <div class="footer__bar">
+            Besant team © 2025 Web Design Mastery. All rights reserved.
+        </div>
+    </footer>
+
+
+    <!-- whatsapp -->
+
+    <!-- <div class="whatsapp-btn-container">
+        <a href="https://wa.me/919445487884" class="whatsapp-btn"><i class="fab fa-whatsapp"></i></a>
+        
+        <span> contact us</span>
+    </div> -->
+
+        <!-- <a href="https://wa.me/919445487884" class="whatsapp-box"><i class=" what-icon fab fa-whatsapp fa-2xl"></i></a>
+     -->
+
+   
+    <div class="container-wat">
+    <div class="what-text-container">
+        <div class="what-btn-container">
+            <a href="https://wa.me/919445487884" class="whatsapp-box"><i class=" what-icon fab fa-whatsapp fa-2xl"></i></a>
+        </div>
+        
+        <div class="what-text">
+            <p>click here to know more info-in whatsapp - </p>
+        </div>
+    </div>
+
+</div>
+
+    <!-- Scroll-up button -->
+    <button class="scroll-up-btn" title="click to scroll"><i class="fa-solid fa-angles-up"></i></button>
+
+
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="update.js"></script>
+</body>
+
+</html>

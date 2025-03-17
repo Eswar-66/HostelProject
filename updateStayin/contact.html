@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - STAY INN</title>
+    <link rel="stylesheet" href="contact.css">
+    <!-- Add Poppins Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="contact.css">
+    <style>
+        .contact-container {
+            display: flex;
+            justify-content: flex-start;
+            align-items: flex-start;
+        }
+        .contact-details {
+            width: 100%; /* Adjust width to 100% since map is removed */
+        }
+
+        /* Divider line above footer */
+        .footer-divider {
+            width: 80%;
+            height: 2px;
+            background-color: #cccccc79;
+            opacity: 0.5;
+            margin: 40px auto;
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav>
+        <div class="logo">
+            <h1>STAY INN</h1>
+        </div>
+        <ul class="nav-links">
+            <li><a href="update.html">Home</a></li>
+            <!-- <li><a href="index.html#hostels">Hostels</a></li> -->
+            <li><a href="amenities.html">Amenities</a></li>
+            <li><a href="gallery2.html">Gallery</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+    
+    <!-- Contact Section -->
+    <section class="contact">
+        <div class="contact-container">
+            <div class="contact-details">
+                <h2>Contact Us</h2>
+                <p>We'd love to hear from you! Whether you have a question about our hostels, amenities, or anything else, our team is ready to answer all your questions.</p>
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <i class="fas fa-phone"></i>
+                        <p>+91 88708 90853</p>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <p>info@hostels.com</p>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <p>Mullai Nagar Anna Nagar West</p>
+                        <p>J Block Anna Nagar West</p>
+                    </div>
+                </div>
+                <form class="contact-form">
+                    <input type="text" placeholder="Your Name" required>
+                    <input type="email" placeholder="Your Email" required>
+                    <textarea placeholder="Your Message" required rows="5" cols="10"></textarea>
+                    <button type="submit">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Divider line above footer -->
+    <div class="footer-divider"></div>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>CONTACT US</h3>
+                <p><i class="fas fa-phone"></i> +91 88708 90853</p>
+                <p><i class="fas fa-envelope"></i> info@hostels.com</p>
+                <p><i class="fas fa-map-marker-alt"></i> Mullai Nagar Anna Nagar West</p>
+                <p><i class="fas fa-map-marker-alt"></i> J Block Anna Nagar West</p>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-youtube"></i></a>
+                </div>
+            </div>
+
+            <div class="footer-section">
+                <h3>QUICK LINKS</h3>
+                <ul>
+                    <li><a href="index.html#about">About Us</a></li>
+                    <li><a href="index.html#blog">Travel Blog</a></li>
+                    <li><a href="index.html#faq">FAQs</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-section">
+                <h3>OUR LOCATION</h3>
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3153.019584507261!2d144.9630579153167!3d-37.8141079797517!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6ad642af0f11fd81%3A0xf577d7f7f7f7f7!2sMullai%20Nagar%20Anna%20Nagar%20West!5e0!3m2!1sen!2sin!4v1633072800000!5m2!1sen!2sin"
+                    width="100%" height="200" style="border:2px solid #ccc; border-radius:15px;" allowfullscreen="" loading="lazy"></iframe>
+            </div>
+
+            <div class="footer-section">
+                <h3>NEWSLETTER</h3>
+                <p>Subscribe for travel tips and exclusive offers!</p>
+                <form class="newsletter-form">
+                    <input type="email" placeholder="Enter your email">
+                    <button type="submit">Subscribe</button>
+                </form>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 Hostels. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        // Optional: Add smooth scroll for navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+</body>
+</html>
