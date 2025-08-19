@@ -1,0 +1,162 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root{
+   --primary: #D077ED;
+  --accent: #6A1B9A;
+  --secondary: #F1F7FD;
+  --bg: #E1ECF5;
+  --white: #fff;
+  --dark: #333;
+}
+
+.main-about{
+  position: relative;
+  top: 70px;
+  padding: 100px 150px;
+}
+
+.about-container{
+  display: flex;
+  flex-direction: row;
+  gap: 40px;
+
+}
+
+.container-head{
+  font-family: "Poppins",Arial, Helvetica, sans-serif;
+  color:#726e6e ;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+
+.container-head h1{
+  font-size: 2.2rem;
+  color: #D077ED;
+  margin-bottom: 10px;
+  letter-spacing: px;  
+}
+
+/* .about-text{
+  top:150px;
+  left: 150px;
+  width: 550px;
+  height: 5px;
+  background-color: rgb(255, 0, 0);
+  position: absolute;
+  border-radius: 20px;
+ 
+}
+
+.about-text-animation{
+  animation:fading-left 0.6s ease-in-out .4s forwards;
+  opacity: 0;
+}
+
+@keyframes fading-left {
+  0%{
+    transform:translateX(-2rem);
+    width: 0;
+    opacity: 0;
+  }
+  100%{
+    transform: none;
+    opacity: 1;
+  }
+} */
+
+.container-head h3{
+
+  text-indent: 2%;
+  font-family:"Raleway", serif;
+}
+
+.container-head .text1{
+  text-indent: 10%;
+}
+
+
+.animated-popin{
+  animation: fade-slide-left .9s ease-in-out forwards;
+  opacity: 0;
+}
+
+.section-animation1{
+  animation-delay: .6s;
+}
+.section-animation2{
+  animation-delay: .8s;
+}
+.section-animation3{
+  animation-delay: 1s;
+}
+
+@keyframes fade-slide-left {
+  0%{
+    opacity:0;
+    transform: translateX(-1rem);
+  }
+  100%{
+    opacity: 1;
+    transform: none;
+  }
+}
+
+.animated-popin2{
+  animation: fade-slide-right 6s cubic-bezier(0,.9,.3,1.2) forwards;
+  opacity: 0;
+}
+
+.sect-animation1{
+  animation-delay: .6s;
+}
+
+
+@keyframes fade-slide-right {
+  0%{
+    opacity:0;
+    transform: translateX(4rem);
+  }
+  100%{
+    opacity: 1;
+    transform: none;
+  }
+}
+
+
+@media (max-width:1480px){
+
+/* img{
+  width: 100%;
+} */
+.main-about{
+padding: 100px 20px;
+}
+}
+
+
+
+@media (max-width:1224px){
+  .container-head {
+    font-family: "Poppins", Arial, Helvetica, sans-serif;
+    color: #726e6e;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.about-container {
+  display: flex;
+  flex-direction: column-reverse;
+  gap: 40px;
+}
+img{
+  width: 100%;
+}
+.main-about{
+padding: 100px 20px;
+}
+}

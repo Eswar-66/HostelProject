@@ -1,0 +1,511 @@
+/* font famliy */
+@import url('https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200..1000;1,200..1000&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Rock+Salt&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Liter&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+:root{
+  --ff-header:"Mulish", serif;
+  --bg-body:#e1ecf5;
+  --bg-header:#D077ED;
+  --bg-preloader:#f9c0f1;
+
+
+   --primary: #D077ED;
+  --accent: #6A1B9A;
+  --secondary: #F1F7FD;
+  --bg: #E1ECF5;
+  --white: #fff;
+  --dark: #333;
+  --tx-logo:#fff;
+}
+
+        /* input  Section  */
+
+.main-booking-sec-input{
+  
+  position: relative;
+  align-items: center;
+  top: 150px;
+  left: 10%;
+  display: flex;
+  align-items: center;
+  justify-content:space-evenly;
+  background-color:#f1f7fd;
+  width: 80%;
+  height: 150px;
+  border-radius: 8px;
+  box-shadow: 1px 1px 6px black;
+  border: none;
+}
+
+
+.main-select{
+  padding: 10px;
+  border: none;
+  outline: none;
+  border-radius: 5px;
+  width: 300px;
+}
+
+
+        /* start of calender */
+
+.calendar{
+  width: 380px;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  background-color: #fff;
+  padding: 10px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  position: absolute;
+  top:60% ;
+}
+
+.monthYear{
+  text-align: center;
+  font-weight: 600;
+  width: 150px;
+}
+
+.cal-header{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+}
+
+.cal-header button{
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ padding: 10px;
+ border-radius: 50%;
+ border: none;
+ background-color: #fff;
+ width: 40px;
+ height: 40px;
+ cursor: pointer;
+ box-shadow: 0 0 4px rgba(0, 0, 0, 0.3);
+}
+
+.days
+{
+  text-align: center;
+  padding: 5px;
+  color: #999FA6;
+  display: grid;
+  grid-template-columns: repeat(7,1fr);
+}
+
+.dates{
+  display: grid;
+  grid-template-columns: repeat(7,1fr);
+  gap: 5px;
+}
+
+.date{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 10px;
+  margin: auto;
+  cursor: pointer;
+  font-weight: 600;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  transition: all 0.2s ;
+}
+
+.date:hover,.date.active{
+  background: #D077ED;
+  color: #fff;
+}
+
+.date.inactive{
+  color: #d2d2d2;
+}
+
+
+.date.inactive:hover{
+  color: #fff;
+}
+
+
+           /* end  of calender */
+
+
+
+body {
+  font-family: Arial, sans-serif;
+  background: #fafafa;
+  margin: 0;
+  padding: 20px;
+}
+
+.section-title {
+  font-size: 24px;
+  margin-bottom: 20px;
+  font-weight: bold;
+}
+
+.room-card {
+  display: flex;
+  align-items: flex-start;
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  margin-bottom: 20px;
+  overflow: hidden;
+}
+
+.room-img {
+  width: 250px;
+  height: 180px;
+  object-fit: cover;
+}
+
+.room-info {
+  flex: 1;
+  padding: 15px 20px;
+}
+
+.room-info h3 {
+  margin: 0 0 8px;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.room-info p {
+  margin: 5px 0;
+  color: #555;
+}
+
+.room-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 15px;
+}
+
+.room-price {
+  font-size: 18px;
+  font-weight: bold;
+  color: #333;
+}
+
+.room-actions {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.btn {
+  padding: 8px 14px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.select-btn {
+  background: #009247;
+  color: white;
+}
+
+.select-btn:hover {
+  background: #007a3c;
+}
+
+.view-link {
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: 600;
+  color: #444;
+}
+
+.view-link:hover {
+  color: #000;
+}
+
+.rooms-section{
+  opacity: 0;
+  transform: translateX(100%);
+  animation: slideIn 1s ease forwards;
+  animation-delay: 1s; /* wait 3 seconds */
+}
+
+@keyframes slideIn {
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+/* Accordion */
+.accordion {
+  background-color: #f7f7f7;
+  color: #444;
+  cursor: pointer;
+  padding: 10px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  font-size: 15px;
+  transition: background 0.3s ease;
+  margin-top: 10px;
+  border-radius: 5px;
+}
+
+.accordion:hover {
+  background-color: #eaeaea;
+}
+
+.panel {
+  padding: 10px 15px;
+  display: none;
+  background: #fafafa;
+  border-left: 3px solid #009247;
+  margin-top: 5px;
+  border-radius: 5px;
+}
+
+.panel p {
+  margin: 5px 0;
+  font-size: 14px;
+  color: #333;
+}
+
+
+/* Slider */
+.slider {
+  position: relative;
+  width: 250px;
+  height: 180px;
+  overflow: hidden;
+  border-radius: 8px;
+}
+
+.slides {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  transition: transform 0.5s ease-in-out;
+}
+
+.slides img {
+  width: 250px;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+/* Prev & Next buttons */
+.prev, .next {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgba(0,0,0,0.4);
+  color: white;
+  border: none;
+  padding: 8px 12px;
+  cursor: pointer;
+  border-radius: 50%;
+  font-size: 18px;
+}
+
+.prev { left: 8px; }
+.next { right: 8px; }
+
+.prev:hover, .next:hover {
+  background: rgba(0,0,0,0.7);
+}
+
+/* Dots (Indicators) */
+.dots {
+  text-align: center;
+  position: absolute;
+  bottom: 10px;
+  width: 100%;
+}
+
+.dot {
+  height: 10px;
+  width: 10px;
+  margin: 0 4px;
+  background-color: rgba(255, 255, 255, 0.6);
+  border-radius: 50%;
+  display: inline-block;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.dot.active {
+  background-color: white;
+}
+
+
+
+/* ---------- GLOBAL STYLES ---------- */
+@import url('https://fonts.googleapis.com/css2?family=Mulish:wght@300;400;600;800&display=swap');
+
+:root {
+  --primary:#D077ED;
+  --secondary:#f1f7fd;
+  --accent:#6a1b9a;
+  --bg:#e1ecf5;
+  --white:#fff;
+  --dark:#333;
+}
+
+* {
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+  font-family:"Mulish", sans-serif;
+}
+
+body {
+  background:var(--bg);
+  color:var(--dark);
+}
+
+header {
+  background:var(--primary);
+  padding:15px 8%;
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  position:fixed;
+  top:0;
+  left:0;
+  width:100%;
+  z-index:1000;
+}
+
+header a {
+  color:var(--white);
+  text-decoration:none;
+  font-weight:600;
+  font-size:18px;
+}
+
+header nav ul {
+  display:flex;
+  gap:25px;
+  list-style:none;
+}
+
+header button {
+  background:var(--white);
+  border:none;
+  color:var(--primary);
+  padding:10px 20px;
+  border-radius:25px;
+  cursor:pointer;
+  font-weight:600;
+  transition:0.3s;
+}
+header button:hover {
+  background:var(--accent);
+  color:var(--white);
+}
+
+/* ---------- BOOKING SECTION ---------- */
+main {
+  padding:120px 8% 50px;
+}
+
+.booking-box {
+  background:var(--secondary);
+  padding:30px;
+  border-radius:12px;
+  box-shadow:0 4px 15px rgba(0,0,0,0.1);
+  max-width:900px;
+  margin:auto;
+}
+
+.booking-box h2 {
+  text-align:center;
+  margin-bottom:20px;
+}
+
+.booking-grid {
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:25px;
+}
+
+label {
+  font-weight:600;
+  margin-bottom:5px;
+  display:block;
+}
+
+input, select {
+  width:100%;
+  padding:12px;
+  border:1px solid #ccc;
+  border-radius:6px;
+  outline:none;
+  margin-bottom:15px;
+  font-size:15px;
+}
+
+input:focus, select:focus {
+  border-color:var(--primary);
+  box-shadow:0 0 4px var(--primary);
+}
+
+.submit-btn {
+  grid-column:1/3;
+  text-align:center;
+}
+
+.submit-btn button {
+  padding:14px 40px;
+  border:none;
+  background:var(--primary);
+  color:#fff;
+  font-size:18px;
+  font-weight:600;
+  border-radius:30px;
+  cursor:pointer;
+  transition:0.3s;
+}
+
+.submit-btn button:hover {
+  background:var(--accent);
+}
+
+
+
+
+
+
+
+
+
+/* Booking box animation */
+.booking-box {
+  opacity: 0;
+  transform: translateX(-100%);
+  animation: slideIn 1s ease forwards;
+  animation-delay: 1s; /* wait 3 seconds */
+}
+
+@keyframes slideIn {
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}

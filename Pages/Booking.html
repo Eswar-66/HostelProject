@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Stay Inn</title>
+  <link rel="icon" type="image/png" href="../Image/Favicon/Logo4.1.png">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+  <link rel="stylesheet" href="../Page_stylesheet/Booking/BookingBase.css">
+  <link rel="stylesheet" href="../Page_stylesheet/Booking/Booking.css">
+
+  <script src="../Hostel.js" defer></script>
+  <script src="../JS/Booking.js" defer></script>
+</head>
+<body>
+  <!-- preloader -->
+  <div class="preloader">
+     <img class="search" src="../Preloader/search.png" alt="search">         
+  </div>
+  
+  <!-- <div></div> --(-- doubt --) -->
+  
+  <!-- Navbar -->
+  <header class="header">
+    <div class="header__content">
+      <!-- logo -->
+      <a href="../index.html" class="header-logo header-animation header-anim1"><span class="header-logo-first">S</span>t<span class="header-logo-inner"><img class="logo-img" src="../Image/Header_logo/Logo4.png" alt="logo"></span>y Inn<br><span class="header-logo-subscript">Men's Hostel</span></a>
+
+      
+      <!-- Navigation bar -->
+
+      <nav class="header_nav">
+        <ul class="header_nav__list">
+
+          <li class="header_nav__item header-animation header-anim2">
+            <a href="../index.html" class="header_nav__link">Home</a>
+          </li>
+
+          <li class="header_nav__item header-animation header-anim3">
+            <a href="../Pages/About_us.html" class="header_nav__link">About us</a>
+          </li>
+
+          <li class="header_nav__item header-animation header-anim4">
+            <a href="../Pages/Booking.html" class="header_nav__link">Booking</a>
+          </li>
+
+          <li class="header_nav__item header-animation header-anim5">
+            <a href="../Pages/OurBranch.html" class="header_nav__link">Our Branches</a>
+          </li>
+
+          <li class="header_nav__item header-animation header-anim6">
+            <a href="../Pages/Gallery.html" class="header_nav__link">Gallery</a>
+          </li>
+
+          <li class="header_nav__item header-animation header-anim7">
+            <a href="../Pages/Contact.html" class="header_nav__link">Contact us</a>
+          </li>
+          <span id="header_hover header-animation header-anim2"></span>
+        </ul>
+
+      </nav>
+
+      <!-- ENquiry button -->
+
+      <div class="header_enquiry header-animation header-anim8 ">
+        <button class="header_nav_button">ENQUIRE NOW</button>
+      </div>
+
+        <!-- Hamburger Menu -->
+      <div class="header_hamburger">
+        <div class="header_ham_bar"></div>
+        <div class="header_ham_bar"></div>
+        <div class="header_ham_bar"></div>
+      </div>
+
+      <!-- ENquiry popup -->
+
+      <div class="header-enq-popup">
+        <div class="header-enq-popup-inner">
+          <h1>Enquiry </h1>
+          <i class="header-enq-icon fa-solid fa-xmark"></i>
+          
+          <form class="pop-form">
+            <label for="popup-name"> Name<br>
+              <input type="text" placeholder="Enter your name" id="popup-name" required><br>
+            </label>
+            <label for="popup-ph"> Contact Number<br>
+              <input type="tel" placeholder="000-000-0000" id="popup-ph"  required><br>
+            </label>
+            <input id="popup-sumbit" type="submit" value="Submit">
+          </form>
+          
+          <div class="popup-text">
+            <h3> OR </h3>
+            <h3> Call Us : +91 9445487884</h3>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+  
+<!-- BOOKING PAGE -->
+
+ <main>
+    <div class="booking-box">
+      <h2>Book Your Stay</h2>
+      <form id="bookingForm">
+        <div class="booking-grid">
+
+          <div>
+            <label for="branch">Select Branch</label>
+            <select id="branch" required>
+              <option value="" disabled selected>Select Hostel Branch</option>
+              <option value="Mullai Nagar">Stay Inn Mullai Nagar</option>
+              <option value="J Block">Stay Inn J Block</option>
+            </select>
+
+            <label for="checkin">Check-In Date</label>
+            <input type="date" id="checkin" required>
+
+            <label for="checkout">Check-Out Date</label>
+            <input type="date" id="checkout" required>
+          </div>
+
+          <div>
+            <label for="name">Full Name</label>
+            <input type="text" id="name" placeholder="Enter your name" required>
+
+            <label for="phone">Phone Number</label>
+            <input type="tel" id="phone" placeholder="9876543210" required>
+
+            <label for="guests">No. of Guests</label>
+            <input type="number" id="guests" min="1" max="5" required>
+          </div>
+
+          <div class="submit-btn">
+            <button type="submit">Confirm Booking</button>
+          </div>
+
+        </div>
+      </form>
+    </div>
+    <br>
+    <br>
+     <section class="rooms-section">
+    <h2 class="section-title">Room Options</h2>
+
+        <div class="room-card">
+      <!-- Image Slider -->
+      <div class="slider">
+        <div class="slides">
+          <img src="../Image/Hostel/mullai1.png" alt=" Chennai 1">
+          <img src="../Image/Hostel/mullai10.png" alt=" Chennai 2">
+          <img src="../Image/Hostel/mullai4.png" alt=" Chennai 3">
+        </div>
+        <button class="prev">&#10094;</button>
+        <button class="next">&#10095;</button>
+        <div class="dots"></div>
+      </div>
+
+      <!-- Room Info -->
+      <div class="room-info">
+        <h3> Chennai</h3>
+        <p><strong>Max Occupancy:</strong> 6 Person(s)</p>
+        <p><strong>Bathroom:</strong> Shared</p>
+
+        <!-- Price Accordion -->
+        <button class="accordion">View Price Details ⮟</button>
+        <div class="panel">
+          <p>Upper bed - ₹7000 (With Food)</p>
+          <p>Lower bed - ₹7500 (With Food)</p>
+          <p>Single bed - ₹8000 (With Food)</p>
+        </div>
+
+        <div class="room-footer">
+          <p class="room-price">₹7,000-8000</p>
+          
+        </div>
+      </div>
+    </div>
+
+    <!-- room 2 -->
+
+    <div class="room-card">
+      <!-- Image Slider -->
+      <div class="slider">
+        <div class="slides">
+          <img src="../Image/Hostel/mullai12.png" alt=" Chennai 1">
+          <img src="../Image/Hostel/mullai10.png" alt=" Chennai 2">
+          <img src="../Image/Hostel/mullai4.png" alt=" Chennai 3">
+        </div>
+        <button class="prev">&#10094;</button>
+        <button class="next">&#10095;</button>
+        <div class="dots"></div>
+      </div>
+
+      <!-- Room Info -->
+      <div class="room-info">
+        <h3> Chennai</h3>
+        <p><strong>Max Occupancy:</strong> 3 Person(s)</p>
+        <p><strong>Bathroom:</strong> Shared</p>
+
+        <!-- Price Accordion -->
+        <button class="accordion">View Price Details ⮟</button>
+        <div class="panel">
+          <p>Upper bed - ₹8000 (With Food)</p>
+          <p>Lower bed - ₹8500 (With Food)</p>
+          <p>Single bed - ₹9000 (With Food)</p>
+        </div>
+
+        <div class="room-footer">
+          <p class="room-price">₹8,000-9000</p>
+        </div>
+      </div>
+    </div>
+
+     <!-- room 2 -->
+    <div class="room-card">
+      <!-- Image Slider -->
+      <div class="slider">
+        <div class="slides">
+          <img src="../Image/Hostel/mullai10.png" alt=" Chennai 1">
+          <img src="../Image/Hostel/mullai11.png" alt=" Chennai 2">
+          <img src="../Image/Hostel/mullai5.png" alt=" Chennai 3">
+        </div>
+        <button class="prev">&#10094;</button>
+        <button class="next">&#10095;</button>
+        <div class="dots"></div>
+      </div>
+
+      <!-- Room Info -->
+      <div class="room-info">
+        <h3> Chennai</h3>
+        <p><strong>Max Occupancy:</strong> 2 Person(s)</p>
+        <p><strong>Bathroom:</strong> Shared</p>
+
+        <!-- Price Accordion -->
+        <button class="accordion">View Price Details ⮟</button>
+        <div class="panel">
+          <p>Upper bed - ₹10000 (With Food)</p>
+          <p>Lower bed - ₹11000 (With Food)</p>
+          <p>Single bed - ₹12000 (With Food)</p>
+        </div>
+
+        <div class="room-footer">
+          <p class="room-price">₹10,000-12,000</p>
+         
+        </div>
+      </div>
+    </div>
+  </section>
+  </main>
+  <!-- Footer -->
+<footer class="footer">
+  <div class="footer-container">
+
+    <div class="footer-about">
+      <h3>Stay Inn</h3>
+      <p>Your comfort is our priority. Book your stay with us and enjoy world-class amenities at affordable prices.</p>
+    </div>
+
+    <div class="footer-links">
+      <h4>Quick Links</h4>
+      <ul>
+        <li><a href="../index.html">Home</a></li>
+        <li><a href="../Pages/About_us.html">About</a></li>
+        <li><a href="../Pages/Booking.html">Booking</a></li>
+        <li><a href="../Pages/Gallery.html">Gallery</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    </div>
+
+    <div class="footer-contact">
+      <h4>Contact Us</h4>
+      <p><i class="fas fa-phone"></i> +91 98765 43210</p>
+      <p><i class="fas fa-envelope"></i> info@stayinn.com</p>
+      <p><i class="fas fa-map-marker-alt"></i> Chennai, India</p>
+    </div>
+
+    <div class="footer-social">
+      <h4>Follow Us</h4>
+      <a href="#"><i class="fab fa-facebook-f"></i></a>
+      <a href="#"><i class="fab fa-instagram"></i></a>
+      <a href="#"><i class="fab fa-twitter"></i></a>
+    </div>
+
+  </div>
+  <div class="footer-bottom">
+    <p>© 2025 Stay Inn. All Rights Reserved.</p>
+  </div>
+</footer>
+
+</body>
+</html>
